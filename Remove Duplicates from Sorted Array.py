@@ -5,4 +5,4 @@ class Solution:
             if nums[slow] != nums[fast]:
                 slow += 1
                 nums[slow] = nums[fast]
-        return len(nums[:slow+1])
+        return slow + 1
