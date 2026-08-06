@@ -2,29 +2,21 @@ t = int(input())
 
 for _ in range(t):
     n, m = map(int, input().split())
-    actions = list(map(int, input().split()))
+    p = list(map(int, input().split()))
 
-    recent = list(range(1, n + 1))
-    inside = set(recent)
+    first_times = []
+    seen = set()
 
-    ans = [-1] * (n + 1)
+    for i in range(m):
+        if p[i] not in seen:
+            seen.add(p[i])
+            first_times.append(i + 1)
 
-    for time, post in enumerate(actions, 1):
+    ans = [-1] * n
 
-        if post in inside:
-            recent.remove(post)
-            recent.insert(0, post)
+    for i in range(min(n, len(first_times))):
+        ans[n - 1 - i] = first_times[i]
 
-        else:
-            removed = recent.pop()
-            inside.remove(removed)
-
-            if removed <= n:
-                ans[removed] = time
-
-            recent.insert(0, post)
-            inside.add(post)
-
-    print(*ans[1:])
+    print(*ans)
 
 # problem link --> https://codeforces.com/problemset/problem/1799/A
