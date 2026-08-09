@@ -1,11 +1,15 @@
 class Solution:
     def findRadius(self, houses: List[int], heaters: List[int]) -> int:
-        distances = []
+        houses.sort()
+        heaters.sort()
+        n = len(heaters) - 1
+
+        i = 0
+        res = 0
 
         for house in houses:
-            min_dist = float('inf')
-            for heater in heaters:
-                min_dist = min(min_dist, abs(heater - house))
-            distances.append(min_dist)
+            while i < n and heaters[i] + heaters[i+1] <= house * 2:
+                i += 1
+            res = max(res, abs(heaters[i] - house))
 
-        return max(distances)
+        return res
