@@ -1,24 +1,16 @@
-from bisect import bisect_left
-
 n, m = map(int, input().split())
+
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
-prefix = []
+dorm = 0
 total = 0
 
-for x in a:
-    total += x
-    prefix.append(total)
-
 for x in b:
-    i = bisect_left(prefix, x)
+    while x > total + a[dorm]:
+        total += a[dorm]
+        dorm += 1
 
-    if i == 0:
-        room = x
-    else:
-        room = x - prefix[i - 1]
-
-    print(i + 1, room)
+    print(dorm + 1, x - total)
 
 # CodeForces problem link --> https://codeforces.com/problemset/problem/978/C
