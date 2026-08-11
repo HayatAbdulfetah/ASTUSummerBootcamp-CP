@@ -1,27 +1,18 @@
-from collections import Counter
-
+class Solution:
+    def longestSubsequenceRepeatedK(self, s, k):
         count = Counter(s)
 
-        # Characters that can appear at least once
         chars = []
-
         for ch in count:
             if count[ch] >= k:
                 chars.append(ch)
 
-        # Try larger characters first
         chars.sort(reverse=True)
-
-        # Maximum possible length of answer
-        max_len = 0
-
-        for ch in chars:
-            max_len += count[ch] // k
 
         ans = ""
 
-        def check(sub):
-            target = sub * k
+        def valid(word):
+            target = word * k
             j = 0
 
             for ch in s:
@@ -30,25 +21,18 @@ from collections import Counter
 
             return j == len(target)
 
-        def dfs(cur):
+        def dfs(word):
             nonlocal ans
 
-            # Update answer
-            if len(cur) > len(ans):
-                ans = cur
-            elif len(cur) == len(ans) and cur > ans:
-                ans = cur
-
-            if len(cur) == max_len:
-                return
+            if len(word) > len(ans):
+                ans = word
 
             for ch in chars:
-                # We cannot use this character more than count[ch] // k
-                if cur.count(ch) < count[ch] // k:
-                    new_cur = cur + ch
+                if word.count(ch) < count[ch] // k:
+                    new_word = word + ch
 
-                    if check(new_cur):
-                        dfs(new_cur)
+                    if valid(new_word):
+                        dfs(new_word)
 
         dfs("")
 
