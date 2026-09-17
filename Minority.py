@@ -9,3 +9,6 @@ for _ in range(t):
     print(ones)
   else:
     print(zeros)
+
+
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1633/B
