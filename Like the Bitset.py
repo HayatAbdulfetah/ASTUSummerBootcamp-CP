@@ -38,4 +38,4 @@ for _ in range(t):
     print("YES")
     print(*ans)
 
-#problem link --> https://codeforces.com/problemset/problem/2136/B
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2136/B
