@@ -36,3 +36,5 @@ for _ in range(t):
         prev = best
 
     print("YES" if possible else "NO")
+
+# Codeforce problem link --> https://codeforces.com/problemset/problem/2065/C2
