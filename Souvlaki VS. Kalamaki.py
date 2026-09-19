@@ -14,3 +14,5 @@ for _ in range(t):
             break
 
     print("YES" if ok else "NO")
+
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2163/A
