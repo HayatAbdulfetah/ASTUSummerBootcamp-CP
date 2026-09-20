@@ -22,4 +22,4 @@ for _ in range(t):
 
     print(ans)
 
-# problem link --> https://codeforces.com/problemset/problem/2192/A
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2192/A
