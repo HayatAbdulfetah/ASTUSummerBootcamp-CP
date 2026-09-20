@@ -19,4 +19,4 @@ for _ in range(t):
 
     print(*ans)
 
-# problem link --> https://codeforces.com/problemset/problem/1799/A
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1799/A
