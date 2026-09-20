@@ -8,3 +8,5 @@ for _ in range(t):
     mx = max(a)
 
     print((mx - mn + 1) // 2)
+
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2229/A
