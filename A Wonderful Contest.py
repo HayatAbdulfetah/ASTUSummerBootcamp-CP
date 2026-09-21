@@ -8,3 +8,5 @@ for _ in range(t):
         print("Yes")
     else:
         print("No")
+
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2222/A
