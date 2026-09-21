@@ -35,4 +35,4 @@ for _ in range(t):
     print("YES" if ok else "NO")
   
 
-# problem link--> https://codeforces.com/problemset/problem/1646/B
+# Codeforces problem link--> https://codeforces.com/problemset/problem/1646/B
