@@ -8,4 +8,5 @@ class Solution:
                 dict_str[x].append(word)
             else:
                 dict_str[x] = [word]
+                
         return list(dict_str.values())
