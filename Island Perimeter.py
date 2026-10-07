@@ -6,7 +6,7 @@ class Solution:
 
         for i in range(rows):
             for j in range(cols):
-                if grid[i][j]==1:
+                if grid[i][j] == 1:
                     perimeter += 4
                     if i + 1 < rows and grid[i + 1][j] == 1:
                         perimeter -= 2
