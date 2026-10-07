@@ -23,4 +23,4 @@ for _ in range(t):
         else:
             print("NO")
 
-# problem link --> https://codeforces.com/problemset/problem/1807/D
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1807/D
