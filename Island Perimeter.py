@@ -12,4 +12,5 @@ class Solution:
                         perimeter -= 2
                     if j + 1 < cols and grid[i][j + 1] == 1:
                         perimeter -= 2
+                        
         return perimeter
