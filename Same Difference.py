@@ -1,4 +1,4 @@
-t = int(input())
+kt = int(input())
 
 for _ in range(t):
     n = int(input())
@@ -8,3 +8,5 @@ for _ in range(t):
     ans = len(s) - target
 
     print(ans)
+
+# Codeforces problem link
