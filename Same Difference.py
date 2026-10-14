@@ -1,4 +1,4 @@
-kt = int(input())
+t = int(input())
 
 for _ in range(t):
     n = int(input())
@@ -9,4 +9,4 @@ for _ in range(t):
 
     print(ans)
 
-# Codeforces problem link
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1520/D
