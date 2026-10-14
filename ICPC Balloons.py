@@ -17,4 +17,4 @@ for _ in range(t):
         
     print(count)
 
-# problem link --> https://codeforces.com/problemset/problem/1703/B
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1703/B
