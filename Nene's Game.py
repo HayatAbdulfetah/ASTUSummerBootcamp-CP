@@ -10,4 +10,4 @@ for _ in range(t):
     print()
   
 
-# problem link --> https://codeforces.com/problemset/problem/1956/A
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1956/A
