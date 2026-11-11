@@ -6,7 +6,6 @@ for _ in range(t):
 
     p = [0] * n
     possible = True
-
     i = 0
 
     while i < n:
