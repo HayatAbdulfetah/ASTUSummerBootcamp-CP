@@ -8,4 +8,4 @@ for _ in range(t):
 
     print(a[-1] + a[-2] - a[0] - a[1])
 
-#problem link --> https://codeforces.com/problemset/problem/1720/B
+# Codeforces problem link --> https://codeforces.com/problemset/problem/1720/B
