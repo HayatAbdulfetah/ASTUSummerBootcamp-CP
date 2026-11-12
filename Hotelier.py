@@ -21,4 +21,4 @@ for ch in s:
 
 print(*rooms, sep="")
 
-#  Codefoces link --> https://codeforces.com/problemset/problem/1200/A
+#  Codefoces problem link --> https://codeforces.com/problemset/problem/1200/A
