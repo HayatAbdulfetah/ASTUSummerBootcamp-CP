@@ -9,9 +9,7 @@ class Solution:
         water = 0
 
         while left < right:
-
             if height[left] < height[right]:
-
                 if height[left] >= leftMax:
                     leftMax = height[left]
                 else:
