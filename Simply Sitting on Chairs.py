@@ -11,4 +11,4 @@ for _ in range(t):
 
     print(ans)
 
-# problem link --> https://codeforces.com/problemset/problem/2210/B
+# Codeforces problem link --> https://codeforces.com/problemset/problem/2210/B
